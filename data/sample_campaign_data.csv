@@ -1,0 +1,43 @@
+date,campaign,channel,country,spend,impressions,clicks,installs,conversions,revenue
+2026-07-01,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-02,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-03,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-04,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-05,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-06,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-07,Campaign Alpha,Meta,NL,100,10000,200,40,10,250
+2026-07-08,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-09,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-10,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-11,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-12,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-13,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-14,Campaign Alpha,Meta,NL,102,10100,202,41,10,252
+2026-07-01,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-02,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-03,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-04,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-05,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-06,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-07,Campaign Beta,Google Ads,DE,100,9000,180,36,10,250
+2026-07-08,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-09,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-10,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-11,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-12,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-13,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-14,Campaign Beta,Google Ads,DE,130,9300,182,36,10,250
+2026-07-01,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-02,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-03,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-04,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-05,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-06,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-07,Campaign Gamma,TikTok,NL,90,11000,220,55,11,220
+2026-07-08,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220
+2026-07-09,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220
+2026-07-10,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220
+2026-07-11,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220
+2026-07-12,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220
+2026-07-13,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220
+2026-07-14,Campaign Gamma,TikTok,NL,90,11000,218,35,11,220

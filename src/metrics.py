@@ -4,7 +4,7 @@ def safe_divide(numerator: float, denominator: float) -> float | None:
     if denominator == 0:
         return None
 
-    return numerator / denominator
+    return float(numerator / denominator)
 
 
 def calculate_metrics(
@@ -36,7 +36,7 @@ def percentage_change(
     if previous is None or current is None or previous == 0:
         return None
 
-    return ((current - previous) / previous) * 100
+    return float(((current - previous) / previous) * 100)
 
 
 if __name__ == "__main__":

@@ -255,9 +255,9 @@ if st.button(
 st.divider()
 
 st.caption(
-    "Independent educational prototype using synthetic aggregated data. "
-    "It is not affiliated with Creative Clicks and does not use or "
-    "replicate proprietary Creative Clicks technology. "
+    "Independent portfolio prototype using synthetic aggregated data. "
+    "It does not use proprietary advertising data or replicate "
+    "proprietary advertising technology. "
     "AI outputs are intended for human review and do not make "
     "autonomous advertising decisions."
 )

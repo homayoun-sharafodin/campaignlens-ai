@@ -55,8 +55,12 @@ Follow these rules strictly:
    targeting, placement mix, or frequency is not supplied, do not claim
    anything about it as fact. It may only appear as a hypothesis or
    recommended check.
-9. If deterministic detection status is "stable", do not manufacture a
-   performance problem.
+9. If deterministic detection status is "stable":
+   - clearly state that performance is stable,
+   - return an empty observations list,
+   - return an empty possible_hypotheses list,
+   - do not recommend investigation into minor normal variations,
+   - only mention continued monitoring if a recommended check is necessary.
 10. Use concise language and explicitly acknowledge uncertainty where needed.
 11. Recommended checks should help a human investigate the issue rather than
    instructing the system to make autonomous advertising decisions.

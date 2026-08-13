@@ -74,9 +74,13 @@ def evaluate_case(
     )
 
     if case["expected_status"] == "stable":
-        stable_case_ok = len(insight.observations) == 0 or (
-            "stable" in insight.executive_summary.lower()
-            or "no significant" in insight.executive_summary.lower()
+        stable_case_ok = (
+            len(insight.observations) == 0
+            and len(insight.possible_hypotheses) == 0
+            and (
+                "stable" in insight.executive_summary.lower()
+                or "no significant" in insight.executive_summary.lower()
+            )
         )
 
     score = sum(

@@ -10,6 +10,24 @@ The core design principle is simple:
 
 ---
 
+## Demo
+
+CampaignLens compares two campaign periods, calculates performance metrics using deterministic Python logic, detects meaningful changes, and provides structured evidence for grounded AI analysis.
+
+### Campaign Performance Overview
+
+![CampaignLens AI campaign performance overview](docs/images/campaignlens-overview.png)
+
+### Deterministic Change Detection
+
+![CampaignLens AI detected changes and analysis](docs/images/campaignlens-analysis.png)
+
+### Generated AI Insight
+
+![CampaignLens AI generated grounded insight](docs/images/campaignlens-ai-insight.png)
+
+---
+
 ## Why This Project?
 
 Performance-marketing data can contain many metrics across multiple campaigns and time periods.

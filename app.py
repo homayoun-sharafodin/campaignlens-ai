@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 
 from src.change_detector import detect_changes
@@ -133,7 +134,11 @@ def render_ai_insight(insight) -> None:
 
     st.subheader("AI Insight")
 
-    st.write(insight.executive_summary)
+    st.write(
+        format_ai_text_numbers(
+            insight.executive_summary
+        )
+    )
 
     st.markdown("### Observations")
 
@@ -142,8 +147,18 @@ def render_ai_insight(insight) -> None:
             f"**{observation.metric} — "
             f"{observation.severity.title()} severity**"
         )
-        st.write(observation.evidence)
-        st.caption(observation.interpretation)
+
+        st.write(
+            format_ai_text_numbers(
+                observation.evidence
+            )
+        )
+
+        st.caption(
+            format_ai_text_numbers(
+                observation.interpretation
+            )
+        )
 
     st.markdown("### Possible Hypotheses")
 
@@ -152,12 +167,16 @@ def render_ai_insight(insight) -> None:
     )
 
     for hypothesis in insight.possible_hypotheses:
-        st.markdown(f"- {hypothesis}")
+        st.markdown(
+            f"- {format_ai_text_numbers(hypothesis)}"
+        )
 
     st.markdown("### Recommended Checks")
 
     for check in insight.recommended_checks:
-        st.markdown(f"- {check}")
+        st.markdown(
+            f"- {format_ai_text_numbers(check)}"
+        )
 
     st.markdown("### Confidence")
 
@@ -166,8 +185,24 @@ def render_ai_insight(insight) -> None:
     st.markdown("### Limitations")
 
     for limitation in insight.limitations:
-        st.markdown(f"- {limitation}")
+        st.markdown(
+            f"- {format_ai_text_numbers(limitation)}"
+        )
 
+def format_ai_text_numbers(text: str) -> str:
+    """Format decimal numbers in AI-generated text for cleaner display."""
+
+    def replace_number(match):
+        token = match.group(0)
+
+        if token.endswith("%"):
+            value = float(token[:-1])
+            return f"{value:.1f}%"
+
+        value = float(token)
+        return f"{value:.2f}".rstrip("0").rstrip(".")
+
+    return re.sub(r"-?\d+\.\d+%?", replace_number, text)
 
 st.set_page_config(
     page_title="CampaignLens AI",
